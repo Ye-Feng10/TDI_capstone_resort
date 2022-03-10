@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Ski-resort-finder</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('https://images.unsplash.com/photo-1546180043-e1475c173021?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.container {
+  font-size: 16px;
+  width: 6in;
+}
+.transbox label{
+
+}
+.radio label input{
+  margin-right: 10px;
+
+}
+.checkbox label input{
+  margin-right: 10px;
+
+}
+media="screen">
+    .container {
+      font-size: 16px;
+      width: 6in;
+    }
+div.transbox {
+    margin: 10px;
+    background-color: #184c66;
+    padding: 25px;
+    opacity: 0.8;
+    }
+
+</style>
+<body>
+
+  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+    <div class="w3-display-middle">
+      <h1 class="w3-jumbo w3-animate-top">Resort Finder</h1>
+      <hr class="w3-border-grey" style="margin:auto;width:40%">
+      <div class="container">
+    <div class="transbox">
+    <br>
+    <form action="/results" method="post">
+      <div class="form-group">
+         <!-- Location-->
+        <label>Choose Location:</label>
+        <select class="form-control" name="geography"><br>
+          <option>california</option>
+          <option>nevada</option>
+          <option>colorado</option>
+          <option>washington</option>
+          <option>utah</option>
+          <option>oregon</option>
+          <option>alaska</option>
+          <option>idaho</option>
+          <option>north-carolina</option>
+          <option>wyoming</option>
+          <option>arizona</option>
+          <option>minnesota</option>
+          <option>new-mexico</option>
+          <option>montana</option>
+          <option>michigan</option>
+          <option>vermont</option>
+          <option>wisconsin</option>
+          <option>new-hampshire</option>
+          <option>new-jersey</option>
+          <option>massachusetts</option>
+          <option>pennsylvania</option>
+          <option>new-york</option>
+          <option>maine</option>
+          <option>west-virginia</option>
+          <option>iowa</option>
+          <option>ohio</option>
+          <option>virginia</option>
+          <option>illinois</option>
+          <option>missouri</option>
+          <option>connecticut</option>
+          <option>tennessee</option>
+          <option>indiana</option>
+          <option>south-dakota</option>
+          <option>North America</option>
+          <option>maryland</option>
+        </select>
+        <br>
+      </div>
+      <br>
+       <!-- Beginner -->
+      <label>What is your ski/snowboard ability level?</label>
+      <div class="radio">
+        <label><input type="radio" name="ability_level" value="0">Beginner</label><br>
+        <label><input type="radio" name="ability_level" value="1">Intermediate</label><br>
+        <label><input type="radio" name="ability_level" value="2">Advanced</label>
+      </div>
+      <br>
+       <!-- Powder -->
+      <label>Do you prefer to ride on groomed trails or powder?</label>
+      <div class="radio">
+        <label><input type="radio" name="snow_conditions"  value="0">Groomed</label><br>
+        <label><input type="radio" name="snow_conditions"  value="1">Powder</label>
+      </div>
+      <br>
+        <!-- Ski-resort features -->
+      <label>Choose ski-resort features that are important to you</label>
+      <div class="checkbox"  name="resort_features">
+        <label><input type="checkbox" name="feat_1" value="1">Fast lift speed</label><br>
+        <label><input type="checkbox" name="feat_2" value="2">High Quality Restaurants</label><br>
+        <label><input type="checkbox" name="feat_3" value="3">Lift-Line Wait Times</label><br>
+        <label><input type="checkbox" name="feat_4" value="4">Friendly staff</label><br>
+        <label><input type="checkbox" name="feat_5" value="5">Variety Terrain</label><br>
+        <label><input type="checkbox" name="feat_6" value="6">Less crowded</label><br>
+        <label><input type="checkbox" name="feat_7" value="7">Family Friendy</label><br>
+      </div>
+      <br>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </div>
+  </div>
+    </div>
+  </div>
+
+</body>
+</html>
